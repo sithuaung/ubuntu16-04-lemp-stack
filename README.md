@@ -24,7 +24,7 @@ enable-swap.sh
 Just run the above script and will create 1GB swap for you.
 
 ### storage permission
-If I need to give permission to storage directory, I just simple give 777. aweful right? Yeah. don't do that. Go to laravel project root and type these 2 commands
+If I need to give permission to storage directory, I just simple give 777. aweful right? Yeah. don't do that. Go to laravel project root and type this commands.
 <pre>
 sudo chgrp -R www-data storage bootstrap/cache && sudo chmod -R ug+rwx storage bootstrap/cache
 </pre>
