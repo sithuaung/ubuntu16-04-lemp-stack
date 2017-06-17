@@ -5,7 +5,7 @@ When I need to setup a new server for laravel project, I'm sick of googling and 
 You bought a ubuntu 16.04 server and you want to setup LEMP.
 just use 
 <pre>
-install-lemp-ubuntu16-04.sh
+lemp-for-ubuntu.sh
 </pre>
 Above shell will install php7.0, mysql 5.7, nginx 1.10 and a few extensions for laravel up and running.
 Just watch with a cup of coffee. But you'll need to type mysql root password.
