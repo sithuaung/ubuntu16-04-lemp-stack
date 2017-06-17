@@ -5,7 +5,15 @@ echo " --- Updating packages Lists --- "
 sudo apt-get update
 
 echo " --- Installing php-7 --- "
-sudo apt install -y php7.0-cli
+sudo add-apt-repository ppa:ondrej/php
+sudo apt-get update
+sudo apt-get install -y php7.1-fpm
+
+echo " --- Installing necessary php extensions for laravel --- "
+sudo apt-get install -y php7.1-mbstring
+sudo apt-get install -y php7.1-xml
+sudo apt-get install -y php7.1-zip
+sudo apt-get install -y php7.1-mysql
 
 echo " --- Installing nginx --- "
 sudo apt-get install -y nginx
@@ -19,12 +27,5 @@ mysql_secure_installation
 echo " --- Installing composer --- "
 sudo curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
-
-echo " --- Installing necessary extensions for laravel --- "
-sudo apt-get install -y php7.0-mbstring
-sudo apt-get install -y php-xml
-sudo apt-get install -y php7.0-zip
-sudo apt-get install -y php7.0-fpm
-sudo apt-get install php7.0-mysql
 
 echo " --- Enjoy your LEMP --- "
