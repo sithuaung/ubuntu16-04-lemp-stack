@@ -28,4 +28,7 @@ echo " --- Installing composer --- "
 sudo curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 
+echo " --- Removing unnecessary packages --- "
+sudo apt-get autoremove
+
 echo " --- Enjoy your LEMP --- "
