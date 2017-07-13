@@ -14,6 +14,7 @@ sudo apt-get install -y php7.1-mbstring
 sudo apt-get install -y php7.1-xml
 sudo apt-get install -y php7.1-zip
 sudo apt-get install -y php7.1-mysql
+sudo apt-get install -y php7.1-curl
 
 echo " --- Installing nginx --- "
 sudo apt-get install -y nginx
