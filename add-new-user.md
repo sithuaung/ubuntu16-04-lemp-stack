@@ -15,7 +15,7 @@ ssh sithu@you_ip
 
 ## Change the application pemission
 ```
-sudo chown sithu:sithu /var/www/html/{your_app}
+sudo chown -R sithu:sithu /var/www/html/{your_app}
 ```
 ## Change permission for nginx
 ```
