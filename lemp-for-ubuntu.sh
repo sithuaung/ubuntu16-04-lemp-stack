@@ -4,6 +4,9 @@ echo " --- Well! you will get LEMP immediately! Yay. --- "
 echo " --- Updating packages Lists --- "
 sudo apt-get update
 
+echo " --- Install Basic necessary --- "
+sudo apt-get install zip unzip
+
 echo " --- Installing php-7 --- "
 sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update
